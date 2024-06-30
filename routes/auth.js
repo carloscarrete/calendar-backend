@@ -5,15 +5,6 @@ const { validator } = require('../middleware/validator');
 const { validateJWT } = require('../middleware/validateToken');
 const router = Router();
 
-
-router.get('/', (req, res) => {
-    return res.status(200).json({
-        ok: true,
-        message: 'Hello World!'
-    })
-})
-
-
 router.post('/new',
     [
         check('name', 'Name is required').not().isEmpty(),
