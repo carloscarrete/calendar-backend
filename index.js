@@ -8,7 +8,7 @@ const app = express()
 
 //CORS with headers
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://127.0.0.1:5500','http://localhost:5173'],
+    origin: ['http://localhost:3000', 'http://127.0.0.1:5500','http://localhost:5173','https://calendar-backend-upmt.onrender.com'],
     methods: [
         'GET',
         'POST',
